@@ -15,7 +15,7 @@
   <!-- angular plugin -->
   <script type="text/javascript" src="js/angular-fusioncharts.min.js"></script>
 	
-  <!-- zune plugin -->
+  <!-- zune theme -->
   <script type="text/javascript" src="js/zune-theme.js"></script>
   
   <script type="text/javascript">
@@ -38,7 +38,7 @@
           "caption": "Column Chart Built in Angular!",
           "captionFontSize": "30",
           "captionPadding": "25",
-          "baseFontSize": "13",
+          "baseFontSize": "16",
           "canvasBorderAlpha": "0",
           "showPlotBorder": "0",
           "placevaluesInside": "1",
@@ -101,5 +101,8 @@
 	<body ng-controller="MyController">
 	<div><fusioncharts  id="mychartcontainer" chartid="angularChart" width="100%"  height="500" type="column2d" dataSource="{{dataSource}}" events="events">Awesome Chart on its way!</fusioncharts></div>
 	<div class="statusbar" style="{{ colorValue }}">{{ selectedValue }}</div>
+  <p class="learnMore">
+    Made using <a target="_blank" href="http://www.fusioncharts.com/">FusionCharts</a> and its <a target="_blank" href="http://www.fusioncharts.com/angularjs-charts/">Angular charts</a> plugin. To return to the tutorial, <a target="_blank" href="https://davidwalsh.name/angular-charts">click here</a>.
+  </p>
 </body>
 </html>
